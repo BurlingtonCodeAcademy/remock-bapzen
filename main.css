@@ -72,9 +72,11 @@ body {
     color: #86220A;
 }
 
-h1 {
+header> h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     font-weight: 600;
     font-size: 4em;
 }
+
+
