@@ -1,0 +1,80 @@
+body {
+    background-color: #F2E3BC;
+}
+
+
+
+.container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 10fr 1fr 1fr;
+    grid-template-rows: 2fr .25fr .25fr 3fr;
+    grid-template-areas: " . . header . . "
+                    " . . center-line . . "
+                    " . . tagline . . "
+                    " . . image-content . . ";
+    
+                    
+
+}
+
+#home-top {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    /* grid-template-areas: ". header ."; */
+    
+}
+
+#horiz{
+    grid-area: center-line;
+    align-self: center;
+}
+
+#img-area{
+    grid-area: image-content;
+    justify-self: center;
+    
+}
+
+#tagline {
+    grid-area: tagline;
+}
+
+.img-top {
+    display: grid;
+    grid-template-areas: "left center right";
+    grid-gap: 1rem;
+    
+}
+
+#home-top{
+    grid-area: header
+}
+
+#img-lft{
+    grid-area: left;
+}
+
+#img-ctr{
+    grid-area: center;
+}
+
+#img-rgt{
+    grid-area: right;
+}
+
+#subtitle {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: large;
+    text-align: center;
+    color: #86220A;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: 600;
+    font-size: 4em;
+}
