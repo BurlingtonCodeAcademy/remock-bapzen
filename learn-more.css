@@ -1,5 +1,5 @@
 body {
-    background-color: #F2E3BC;
+    background-color: #FFFAF7;
 }
 
 
@@ -63,16 +63,23 @@ header> h1 {
 }
 
 
-#main h2 {
-    font-weight: 400;
-    font-family: 'Lora', ;
+#main h3 {
+    font-weight: 600;
+    font-family: 'Arimo', bold;
     color: #4B3021;
+
 }
 
-#main p {
-    font-family: 'Lora', ;
-    font-weight: 250;
-    font-size: 110%;
+#main-page h2 {
+    font-family: 'Arimo', regular;
+    font-size: larger;
+
+}
+
+#main-page p {
+    font-family: 'Source Sans Pro', light;
+    font-weight: 150;
+    font-size: 100%;
     text-align: justify;
     color: #86220A;
     margin-bottom: 10px;
