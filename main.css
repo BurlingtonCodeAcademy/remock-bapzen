@@ -29,6 +29,8 @@ body {
 #horiz{
     grid-area: center-line;
     align-self: center;
+    /* color: #754709 */
+    
 }
 
 #img-area{
@@ -65,15 +67,16 @@ body {
 }
 
 #subtitle {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Lora', ;
     font-weight: 300;
-    font-size: large;
+    font-size: 150%;
     text-align: center;
     color: #86220A;
+    margin-bottom: 20px;
 }
 
 header> h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Montserrat', ;
     text-align: center;
     font-weight: 600;
     font-size: 4em;

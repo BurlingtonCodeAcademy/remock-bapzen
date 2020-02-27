@@ -1,0 +1,93 @@
+body {
+    background-color: #F2E3BC;
+}
+
+
+.contain-learn-more {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
+    grid-template-rows: .25fr .25fr .25fr .25fr .25fr .25fr 3fr;
+    grid-template-areas: " . header header header . "
+                    " . sidebar-top main main . "
+                    " . sidebar-top main main . "
+                    " . sidebar-top main main . "
+                    " . sidebar-bot main main . "
+                    " . sidebar-bot main main . "
+                    " footer footer footer footer footer ";
+    grid-gap: 2rem;
+                    
+                    
+}
+
+#home-top hr {
+    color: #9A8779;
+}
+
+header> h1 {
+    font-family: 'Montserrat', ;
+    text-align: center;
+    font-weight: 600;
+    font-size: 4em;
+    color: brown;
+    text-shadow: grey;
+}
+
+#subtitle {
+    font-family: 'Lora', ;
+    font-weight: 300;
+    font-size: 150%;
+    text-align: center;
+    color: #86220A;
+    margin-bottom: 20px;
+}
+
+#header {
+    grid-area: header;
+
+}
+
+#main {
+    grid-area: main;
+}
+
+#main h2 {
+    font-weight: 300;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #4B3021;
+}
+
+#sidebar-top {
+    grid-area: sidebar-top;
+    
+}
+
+#sidebar-bot {
+    grid-area: sidebar-bot;
+    padding-top: 2rem;
+}
+
+.date-label p {
+    background-color: #ACACAA;
+    /* border-radius: ; */
+    color: white;
+    padding: .5rem;
+    width: 75px;
+    height: fit-content;
+}
+
+.notables h4 {
+    color: green;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.notables p {
+    color: darkgrey;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.side-post {
+    padding-bottom: 10px;
+
+}
