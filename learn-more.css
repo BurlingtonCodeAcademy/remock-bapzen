@@ -20,7 +20,7 @@ body {
                     
 }
 
-#home-top hr {
+hr {
     color: #9A8779;
 }
 
@@ -36,7 +36,7 @@ header> h1 {
 #subtitle {
     font-family: 'Lora', ;
     font-weight: 300;
-    font-size: 150%;
+    font-size: 200%;
     text-align: center;
     color: #4B3021;
     margin-bottom: 20px;
@@ -103,14 +103,14 @@ header> h1 {
 .notables {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
    
 }
 
 .notables h4 {
 
     color: #4B3021;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Montserrat', ;
 }
 
 .notables p {
@@ -128,7 +128,22 @@ header> h1 {
    margin-bottom: 2px;
 }
 
+.styled-btn {
+    background-color: #C45C09;
+    color: #FFBC0A;
+    font-size: 1rem;
+    border: 0;
+    padding: 0 20px;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 2.5;
+}
+
+.styled-btn:hover {
+    background-color: #8CD867;
+}
+
 .side-post {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 
 }
