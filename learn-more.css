@@ -2,33 +2,26 @@ body {
     background-color: #FFFAF7;
 }
 
-
 .contain-learn-more {
     display: grid;
     width: 100%;
     height: 100%;
     /* grid-template-columns: 1fr 3fr 3fr 3fr 1fr; */
     grid-template-columns: 10% 25% 55% 10%;
-    grid-template-rows: 15% 45% 25% 15%;
-    grid-template-areas: " . header header . "
-                         " . sidebar-top main . "
-                         " . sidebar-bot main . "
-                         " footer footer footer footer ";
+    grid-template-rows: 10% 45% 30% 15%;
+    grid-template-areas: " . header header . " " . sidebar-top main . " " . sidebar-bot main . " " footer footer footer footer ";
     grid-gap: 2rem;
-    
-                    
-                    
 }
 
 hr {
     color: #9A8779;
 }
 
-header> h1 {
+header>h1 {
     font-family: 'Montserrat', ;
     text-align: center;
-    font-weight: 600;
-    font-size: 4em;
+    font-weight: 500;
+    font-size: 3em;
     color: brown;
     text-shadow: grey;
 }
@@ -44,11 +37,10 @@ header> h1 {
 
 #header {
     grid-area: header;
-
 }
- 
+
 #header a {
-    font-family: 'Montserrat', ;
+    font-family: 'Montserrat', light;
     text-align: center;
     font-weight: 600;
     font-size: 2em;
@@ -59,21 +51,17 @@ header> h1 {
 #main {
     grid-area: main;
     text-align: justify;
-   
 }
-
 
 #main h3 {
     font-weight: 600;
     font-family: 'Arimo', bold;
     color: #4B3021;
-
 }
 
 #main-page h2 {
     font-family: 'Arimo', regular;
     font-size: larger;
-
 }
 
 #main-page p {
@@ -85,54 +73,72 @@ header> h1 {
     margin-bottom: 10px;
 }
 
+#top-img img {
+    object-position: 50% 50%;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+
 #sidebar-top {
     grid-area: sidebar-top;
     text-align: justify;
-   
-    
 }
 
 #sidebar-bot {
     grid-area: sidebar-bot;
     padding-top: 1rem;
-    
+}
+
+.side-post {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.side-post>h5 {
+    font-family: 'Arimo', regular;
+    color: #4B3021;
+}
+
+.side-post>p {
+    font-family: 'Source Sans Pro', light;
+    color: #4B3021;
 }
 
 .date-label {
     background-color: #9A8779;
     border-radius: 6px;
     color: white;
-    padding: .5rem;
-    width: 75px;
-    height: fit-content;
+    padding: .25rem;
+    width: 25%;
+    height: auto;
+    box-shadow: darkgrey;
 }
 
 .notables {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-   
 }
 
 .notables h4 {
-
     color: #4B3021;
     font-family: 'Montserrat', ;
 }
 
 .notables p {
     color: #4B3021;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Source Sans Pro', light;
     text-align: justify;
-
 }
 
 .notables img {
     float: left;
-   height: 5rem;
-   width: 5rem;
-   margin-right: 2px;
-   margin-bottom: 2px;
+    height: 5rem;
+    width: 5rem;
+    margin-right: 2px;
+    margin-bottom: 2px;
 }
 
 .styled-btn {
@@ -148,9 +154,4 @@ header> h1 {
 
 .styled-btn:hover {
     background-color: #8CD867;
-}
-
-.side-post {
-    padding-bottom: 20px;
-
 }
