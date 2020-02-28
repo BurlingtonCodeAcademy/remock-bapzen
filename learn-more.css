@@ -171,7 +171,7 @@ section#footer {
     display:grid;
     margin: 1em 0 0 0;
     padding: 1em;
-    background-color: rgb(145, 162, 168);
+    background-color: rgba(219, 212, 211, 10);
     border-top: 1px solid rgb(122, 117, 117);
 }
 #footer-text {
@@ -211,12 +211,25 @@ section#footer {
 #contact-text{
     grid-area: contact-text;
     margin-top: none;
+    
 }
 #customer-name{ grid-area: customer-name;
     padding-left: 10px;
+    background-color: rgb(224, 236, 238);
     }
-#customer-email{grid-area: customer-email;padding-left: 10px}
-#customer-message{grid-area: customer-message;padding-left: 10px;
+
+#customer-name:hover {
+    background-color: whitesmoke;
+}
+#customer-email:hover {
+    background-color: whitesmoke;
+}
+#customer-message:hover {
+    background-color: whitesmoke;
+}
+
+#customer-email{grid-area: customer-email;padding-left: 10px; background-color: rgb(224, 236, 238);}
+#customer-message{grid-area: customer-message; background-color: rgb(224, 236, 238); padding-left: 10px;
     padding-top: 10px}
 #sendmess-button{
     grid-area: sendmess-button;
