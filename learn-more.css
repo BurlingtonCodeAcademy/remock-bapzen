@@ -10,7 +10,8 @@ body {
     grid-template-columns: 10% 25% 55% 10%;
     grid-template-rows: 10% 45% 30% 15%;
     grid-template-areas: " . header header . " " . sidebar-top main . " " . sidebar-bot main . " " footer footer footer footer ";
-    grid-gap: 2rem;
+    row-gap: 1rem;
+    column-gap: 1.5rem;
 }
 
 hr {
@@ -32,7 +33,7 @@ header>h1 {
     font-size: 200%;
     text-align: center;
     color: #4B3021;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 #header {
@@ -51,6 +52,10 @@ header>h1 {
 #main {
     grid-area: main;
     text-align: justify;
+}
+
+#footer {
+    grid-area: footer;
 }
 
 #main h3 {
@@ -94,7 +99,7 @@ header>h1 {
     display: flex;
     flex-direction: column;
     justify-items: center;
-    
+
 }
 
 .side-post>h5 {
@@ -108,13 +113,17 @@ header>h1 {
 }
 
 .date-label {
-    background-color: #9A8779;
+    background-color: rgb(136, 121, 111);
     border-radius: 6px;
     color: white;
     padding: .25rem;
     width: 25%;
     height: auto;
     box-shadow: darkgrey;
+}
+
+.date-label:hover {
+    background-color: rgb(186, 190, 184);
 }
 
 .notables {
@@ -156,3 +165,119 @@ header>h1 {
 .styled-btn:hover {
     background-color: #8CD867;
 }
+
+/* footer CSS Below ---------------------------------*/
+section#footer {
+    display:grid;
+    margin: 1em 0 0 0;
+    padding: 1em;
+    background-color: rgb(145, 162, 168);
+    border-top: 1px solid rgb(122, 117, 117);
+}
+#footer-text {
+    text-align: center;
+    margin: 5vh auto 3vh auto;
+    font-size: 1em;
+    letter-spacing: 5px;
+    }
+#form-contact{
+    display:grid;
+    grid-gap: 1;
+    margin: 1em;
+    grid-template-rows: 1, 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "customer-name customer-email"
+    "customer-message customer-message"
+    ". . "
+    "sendmess-button . "
+}
+#form{
+    margin: 16px;
+}
+#contact-info{
+    display: grid;
+    margin: 1em;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-areas: 
+    "contact-text contact-text"
+    "contact-text contact-text"
+    "address twitter"
+    "address instagram"
+    "phonenumber dribble"
+    "email facebook";
+}
+#contact-text{
+    grid-area: contact-text;
+    margin-top: none;
+}
+#customer-name{ grid-area: customer-name;
+    padding-left: 10px;
+    }
+#customer-email{grid-area: customer-email;padding-left: 10px}
+#customer-message{grid-area: customer-message;padding-left: 10px;
+    padding-top: 10px}
+#sendmess-button{
+    grid-area: sendmess-button;
+    border-radius: 6px;
+    background-color: rgb(197, 46, 46);
+    color: white;
+}
+#address{grid-area: address;}
+#phonenumber{grid-area: phonenumber}
+#email{grid-area:email}
+#twitter{grid-area: twitter}
+#instagram{grid-area:instagram}
+#dribbble{grid-area: dribble}
+#facebook{grid-area: facebook}
+#contact-info li{
+    list-style-type: none;
+}
+.fa {
+    padding: 5px;
+    font-size: 10px;
+    width: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 85%;
+  }
+  /*Hover effect on social media*/
+  .fa:hover {
+    opacity: 0.7;
+  }
+  /* Facebook */
+  .fa-facebook {
+    background:grey;
+    color: white;
+  }
+  /* Twitter */
+  .fa-twitter {
+    background:grey;
+    color: white;
+  }
+/* Dribbble*/
+  .fa-dribbble{
+      background: grey;
+      color: white;
+  }
+/* Instagram */
+  .fa-instagram{
+      background: gray;
+      color: white;
+  }
+  /* Email */
+  .fa-envelope-square{
+      background: grey;
+      color: white;
+  }
+/* Phone */
+  .fa-phone{
+      background: grey;
+      color: white;
+  }
+/* Address */
+  .fa-home{
+      background: grey;
+      color: white;
+  }
