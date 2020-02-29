@@ -1,5 +1,8 @@
+
+
+
 body {
-    background-color: #F2E3BC;
+    background-color: #FFFAF7;
 }
 
 
@@ -33,6 +36,9 @@ body {
     
 }
 
+#tagline{grid-area: tagline;
+    justify-content: center;
+}
 #img-area{
     grid-area: image-content;
     justify-self: center;
@@ -67,27 +73,22 @@ body {
 }
 
 #subtitle {
+
     font-family: 'Lora', ;
     font-weight: 300;
-    font-size: 150%;
+    font-size: 100%;
     text-align: center;
-    color: #86220A;
+    
     margin-bottom: 20px;
 }
 
 header> h1 {
-    font-family: 'Montserrat', ;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-shadow: whitesmoke 4px 4px;
     text-align: center;
     font-weight: 600;
-    font-size: 4em;
-}
-
-
-#footer {
-    margin: 1em 0 0 0;
-    padding: 1rem;
-    background: rgb(145, 162, 168);
-    border-top: 1px solid black;
+    font-size: 3em;
+    color: rgb(177, 3, 18);
 }
 
 h4 {
@@ -96,3 +97,254 @@ h4 {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+h2 {
+    font-size: 17px;
+    text-align: center;
+    font-weight: lighter;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+h3{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 15px;
+}
+
+/* midsection & sidebar CSS -----------------------------*/
+
+.main-contents{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 8% 28% 28% 28% 8%;
+    grid-template-rows: 10% 45% 30% 15%;
+    grid-template-areas: 
+    " . main-paragraph main-paragraph sidebar ."
+    " . main-paragraph main-paragraph sidebar . "
+    " . main-paragraph main-paragraph sidebar . "
+    " footer footer footer footer footer"
+    }
+
+#main-paragraph{
+    grid-area: main-paragraph
+}
+
+#sidebar{
+    grid-area: sidebar
+ }
+
+#footer{
+    grid-area: footer
+}
+ 
+/* button CSS below---------------------- */
+
+.learnmore-button {
+    background-color: #C45C09;
+    color: #FFBC0A;
+    font-size: 1rem;
+    border: 0;
+    padding: 0 20px;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 2.5;
+}
+.learnmore-button:hover {
+    background-color: rgb(161, 83, 30);
+}
+
+.reading-button {
+    background-color: #C45C09;
+    color: #FFBC0A;
+    font-size: 1rem;
+    border: 0;
+    padding: 0 20px;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 2.5;
+}
+
+.reading-button:hover {
+    background-color: rgb(161, 83, 30)
+}
+.date-label {
+    background-color: rgb(136, 121, 111);
+    border-radius: 6px;
+    color: white;
+    padding: .25rem;
+    width: 25%;
+    height: auto;
+    box-shadow: darkgrey;
+}
+.date-label:hover {
+    background-color: rgb(186, 190, 184);
+}
+
+/* quote area CSS -------------------------------------*/
+#quotebox{
+    margin: 0;
+    height: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(128,134,134);
+    background: linear-gradient(90deg, rgba(128,134,134,1) 9%, rgba(154,161,162,1) 67%, rgba(126,126,133,1) 100%);
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+    line-height: 19px;
+}
+
+
+/* footer CSS Below ---------------------------------*/
+section#footer {
+    display:grid;
+    margin: 1em 0 0 0;
+    padding: 0;
+    background-color: rgb(145, 162, 168);
+    border-top: 1px solid rgb(122, 117, 117);
+    box-shadow: 0 50vh 0 50vh rgb(145, 162, 168);
+}
+#footer-text {
+    text-align: center;
+    margin: 5vh auto 3vh auto;
+    font-size: 1em;
+    letter-spacing: 5px;
+    }
+
+#form-contact{
+    display:grid;
+    grid-gap: 0.5em;
+    margin: 1em;
+    justify-content: space-evenly;
+    grid-template-rows: 1fr 2 fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "  customer-name customer-email"
+    "  customer-message customer-message"
+    "  sendmess-button . "
+}
+
+#form{
+    margin: 16px;
+}
+
+div#contact-info > li{
+    font-size: 12px;
+}
+div#contact-info > p{
+    font-size: 12px;
+}
+#contact-info{
+    display: grid;
+   margin: 1em;
+    grid-template-rows: 1fr 0fr 1fr 1fr 1fr; 
+    grid-template-columns: 40%, 40%, 20%fr;
+    grid-template-areas: 
+    "contact-text contact-text ."
+    "address twitter ."
+    "address instagram ."
+    "phonenumber dribble ."
+    "email facebook .";
+}
+#contact-text{
+    grid-area: contact-text;
+    margin-top: none;
+    margin-right: 1rem;
+
+}
+#customer-name{ 
+    grid-area: customer-name;
+    padding-left: 10px;
+   
+    }
+#customer-email{grid-area: customer-email;padding-left: 9px; padding-right: 5px;}
+#customer-message{grid-area: customer-message;padding-left: 9px; padding-right: 10px;
+    padding-top: 10px}
+#sendmess-button{
+    grid-area: sendmess-button;
+    border-radius: 6px;
+    margin: 0;
+    background-color: rgb(218, 103, 37);
+    color: white;
+}
+#address{
+    grid-area: address
+}
+#phonenumber{
+    grid-area: phonenumber
+}
+#email{
+    grid-area:email
+}
+#twitter{
+    grid-area: twitter
+}
+#instagram{
+    grid-area:instagram
+}
+#dribbble{
+    grid-area: dribble
+}
+#facebook{
+    grid-area: facebook
+}
+#contact-info li{
+    list-style-type: none;
+}
+
+.fa {
+    padding: 5px;
+    font-size: 10px;
+    width: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 85%;
+  }
+  
+  /*Hover effect on social media icons*/
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+/*   social media and contact icon CSS below ----------------------------*/
+  
+/* Facebook */
+  .fa-facebook {
+    background:grey;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background:grey;
+    color: white;
+  }
+
+/* Dribbble*/
+  .fa-dribbble{
+      background: grey;
+      color: white;
+  }
+
+/* Instagram */
+  .fa-instagram{
+      background: gray;
+      color: white;
+  }
+  /* Email */
+  .fa-envelope-square{
+      background: grey;
+      color: white;
+  }
+/* Phone */
+  .fa-phone{
+      background: grey;
+      color: white;
+  }
+/* Address */
+  .fa-home{
+      background: grey;
+      color: white;
+  }
