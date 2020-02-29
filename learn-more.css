@@ -10,7 +10,7 @@ body {
     grid-template-rows: 10% 45% 30% 15%;
     grid-template-areas: " . header header . " " . sidebar-top main . " " . sidebar-bot main . " " footer footer footer footer ";
     row-gap: .5rem;
-    column-gap: 1.5rem;
+    column-gap: 2rem;
 }
 
 hr {
@@ -85,23 +85,26 @@ hr {
 
 #footer {
     grid-area: footer;
+   
 }
 
-#main h3 {
+#main h2 {
     font-weight: 600;
-    font-family: 'Arimo', bold;
+    font-family: 'Open Sans Condensed';
     color: #4B3021;
+    text-transform: uppercase;
 }
 
-#main-page h2 {
-    font-family: 'Lora', extra-light;
-    font-size: 150%;
-    font-weight: 350;
+#main-page h1 {
+    font-family: "Open Sans Condensed";
     color: #4B3021;
+    font-size: 200%;
+    text-transform: uppercase;
+    
 }
 
 #main-page p {
-    font-family: 'Source Sans Pro', light;
+    font-family: 'Raleway', light;
     font-weight: 150;
     font-size: 100%;
     text-align: justify;
@@ -124,6 +127,7 @@ hr {
 #sidebar-bot {
     grid-area: sidebar-bot;
     padding-top: 1rem;
+    
 }
 
 .side-post {
@@ -133,58 +137,71 @@ hr {
 
 }
 
-.side-post>h5 {
-    font-family: 'Arimo', regular;
+.side-post>h4 {
+    
+    font-family: 'Open Sans Condensed';
     color: #4B3021;
+    text-transform: uppercase;
 }
 
 .side-post>p {
-    font-family: 'Source Sans Pro', light;
+    font-family: 'Raleway', light;
     color: #4B3021;
 }
 
 .date-label {
-    background-color: rgb(136, 121, 111);
+    background-color: #764248;
     border-radius: 6px;
-    color: white;
+    color: #FDE6BE;
     padding: .25rem;
     width: 25%;
     height: auto;
     box-shadow: darkgrey;
+    font-family: "Raleway", light;
 }
 
 .date-label:hover {
-    background-color: rgb(186, 190, 184);
+    background-color: #61373B;
 }
 
 .notables {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .notables h4 {
     color: #4B3021;
-    font-family: 'Montserrat', ;
+    font-family: "Open Sans Condensed";
 }
 
 .notables p {
     color: #4B3021;
-    font-family: 'Source Sans Pro', light;
+    font-family: 'Raleway', light;
     text-align: justify;
+}
+
+#sidebar-overlay {
+    background-image:
+        linear-gradient(rgba(255, 250, 247, 0.9), rgba(255, 250, 247, 0.9)),
+        url(side-overlay.png);
+    background-repeat: no-repeat;
+    
+    
 }
 
 .notables img {
     float: left;
-    height: 5rem;
-    width: 5rem;
-    margin-right: 2px;
-    margin-bottom: 2px;
+    height: 7rem;
+    width: 7rem;
+    padding-right: 15px;
+   padding-top: 15px;
+   padding-top: 10px;
 }
 
 .styled-btn {
-    background-color: #C45C09;
-    color: #FFBC0A;
+    background-color: #8F4307;
+    color: #FDE6BE;
     font-size: 1rem;
     border: 0;
     padding: 0 20px;
@@ -194,7 +211,7 @@ hr {
 }
 
 .styled-btn:hover {
-    background-color: #8CD867;
+    background-color: rgb(161, 83, 30);
 }
 
 /* footer CSS Below ---------------------------------*/
@@ -204,6 +221,7 @@ section#footer {
     padding: 1em;
     background-color: rgba(219, 212, 211, 10);
     border-top: 1px solid rgb(122, 117, 117);
+    
 }
 #footer-text {
     text-align: center;
