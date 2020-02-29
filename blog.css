@@ -76,6 +76,26 @@ header>h1 {
     height: auto;
 }
 
+.nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #63854D;
+    overflow: hidden;
+}
+
+.nav li {
+    display: inline;
+    
+}
+
+.nav a {
+    display: block;
+    padding: 5px;
+    
+
+}
+
 .blog-words {
     font-weight: 600;
     font-family: 'Arimo', bold;
