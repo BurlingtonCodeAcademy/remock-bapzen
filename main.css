@@ -1,11 +1,7 @@
-
-
-
+/* general CSS below----------------------- */
 body {
     background-color: #FFFAF7;
 }
-
-
 
 .container {
     display: grid;
@@ -17,23 +13,16 @@ body {
                     " . . center-line . . "
                     " . . tagline . . "
                     " . . image-content . . ";
-    
-                    
-
 }
 
 #home-top {
     grid-column-start: 3;
-    grid-column-end: 4;
-    /* grid-template-areas: ". header ."; */
-    
+    grid-column-end: 4;   
 }
 
 #horiz{
     grid-area: center-line;
-    align-self: center;
-    /* color: #754709 */
-    
+    align-self: center;    
 }
 
 #tagline{grid-area: tagline;
@@ -42,7 +31,6 @@ body {
 #img-area{
     grid-area: image-content;
     justify-self: center;
-    
 }
 
 #tagline {
@@ -53,7 +41,6 @@ body {
     display: grid;
     grid-template-areas: "left center right";
     grid-gap: 1rem;
-    
 }
 
 #home-top{
@@ -73,12 +60,10 @@ body {
 }
 
 #subtitle {
-
     font-family: 'Lora', ;
     font-weight: 300;
     font-size: 100%;
     text-align: center;
-    
     margin-bottom: 20px;
 }
 
@@ -196,7 +181,6 @@ h3{
     line-height: 19px;
 }
 
-
 /* footer CSS Below ---------------------------------*/
 #footer {
     margin: 1em 0 0 0;
@@ -283,6 +267,7 @@ div#contact-info > p{
     background-color: rgb(218, 103, 37);
     color: white;
 }
+
 #address{
     grid-area: address
 }
@@ -304,9 +289,6 @@ div#contact-info > p{
 #facebook{
     grid-area: facebook
 }
-#contact-info li{
-    list-style-type: none;
-} 
 
 .fa {
     padding: 5px;
@@ -317,6 +299,9 @@ div#contact-info > p{
     border-radius: 85%;
   }
   
+#contact-info li{
+    list-style-type: none;
+} 
   /*Hover effect on social media icons*/
   .fa:hover {
     opacity: 0.7;

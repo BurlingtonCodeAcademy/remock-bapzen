@@ -28,12 +28,7 @@ p {
     font-size: 13px;
 }
 
-/* .secondtitle img{
-    width: 75%;
-    height: auto;
-    
-} */
-/* header CSS Below --------------------------------------------*/
+/* header CSS below --------------------------------------------*/
 #header {
     text-align:center;
     margin: 0 5%;
@@ -47,9 +42,6 @@ p {
     font-size: 3em;
     color: rgb(177, 3, 18); 
 }
-
-
-
 
 /* main content CSS below-------------------------------------------*/
 
@@ -81,7 +73,9 @@ p {
 #footer{
     grid-area: footer
 }
+
 /* button CSS Below ---------------------------------------*/
+
 .learnmore-button {
     background-color: #C45C09;
     color: #FFBC0A;

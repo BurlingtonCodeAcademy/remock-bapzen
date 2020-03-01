@@ -1,3 +1,4 @@
+/* general body CSS below----------------------- */
 body {
     background-color: #FFFAF7;
 }
@@ -71,6 +72,8 @@ hr {
     height: auto;
 }
 
+/* sidebar CSS below------------------- */
+
 #sidebar-top {
     grid-area: sidebar-top;
     text-align: justify;
@@ -101,6 +104,16 @@ hr {
     color: #4B3021;
 }
 
+#sidebar-overlay {
+    background-image:
+        linear-gradient(rgba(255, 250, 247, 0.9), rgba(255, 250, 247, 0.9)),
+        url(side-overlay.png);
+    background-repeat: no-repeat;
+        
+
+}
+/* button CSS below------------------------ */
+
 .date-label {
     background-color: #764248;
     border-radius: 6px;
@@ -115,6 +128,23 @@ hr {
 .date-label:hover {
     background-color: #61373B;
 }
+
+.styled-btn {
+    background-color: #8F4307;
+    color: #FDE6BE;
+    font-size: 1rem;
+    border: 0;
+    padding: 0 20px;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 2.5;
+}
+
+.styled-btn:hover {
+    background-color: rgb(161, 83, 30);
+}
+
+/* noteworthy area CSS below------------------------------ */
 
 .notables {
     display: flex;
@@ -135,15 +165,6 @@ hr {
     text-align: justify;
 }
 
-#sidebar-overlay {
-    background-image:
-        linear-gradient(rgba(255, 250, 247, 0.9), rgba(255, 250, 247, 0.9)),
-        url(side-overlay.png);
-    background-repeat: no-repeat;
-    
-    
-}
-
 .notables img {
     float: left;
     height: 7rem;
@@ -151,21 +172,6 @@ hr {
     padding-right: 15px;
    padding-top: 15px;
    padding-top: 10px;
-}
-
-.styled-btn {
-    background-color: #8F4307;
-    color: #FDE6BE;
-    font-size: 1rem;
-    border: 0;
-    padding: 0 20px;
-    text-align: center;
-    border-radius: 5px;
-    line-height: 2.5;
-}
-
-.styled-btn:hover {
-    background-color: rgb(161, 83, 30);
 }
 
 /* footer CSS Below ---------------------------------*/

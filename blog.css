@@ -1,3 +1,5 @@
+/* general body CSS below------------------------------------ */
+
 body {
     background-color: #FFFAF7;
 }
@@ -13,10 +15,7 @@ body {
                         " . blog-head . "
                          " . main . "
                          " footer footer footer ";
-    grid-gap: 2rem;
-    
-                    
-                    
+    grid-gap: 2rem;                
 }
 
 hr {
@@ -36,8 +35,7 @@ hr {
 }
 
 #blog-head {
-    grid-area: blog-head;
-    
+    grid-area: blog-head;   
 }
 
 #blog-content {
@@ -58,8 +56,7 @@ hr {
 
 #blog-head img {
     width: 100%;
-    height: auto;
-    
+    height: auto; 
 }
 
 .blog-words h2 {
@@ -72,8 +69,7 @@ hr {
 .blog-words p {
     font-family: 'Raleway', light;
     font-weight: 150;
-    font-size: 100%;
-    
+    font-size: 100%; 
     text-align: justify;
     color: #86220A;
     margin-bottom: 10px;
