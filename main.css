@@ -179,8 +179,8 @@ h3{
 /* button CSS below---------------------- */
 
 .learnmore-button {
-    background-color: #C45C09;
-    color: #FFBC0A;
+    background-color: #8F4307;
+    color: #FDE6BE;
     font-size: 1rem;
     border: 0;
     padding: 0 20px;
@@ -193,8 +193,8 @@ h3{
 }
 
 .reading-button {
-    background-color: #C45C09;
-    color: #FFBC0A;
+    background-color: #8F4307;
+    color: #FDE6BE;
     font-size: 1rem;
     border: 0;
     padding: 0 20px;
@@ -204,7 +204,7 @@ h3{
 }
 
 .reading-button:hover {
-    background-color: rgb(161, 83, 30)
+    background-color: rgb(161, 83, 30);
 }
 .date-label {
     background-color: #764248;
