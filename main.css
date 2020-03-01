@@ -17,7 +17,14 @@ body {
 
 #home-top {
     grid-column-start: 3;
-    grid-column-end: 4;   
+    grid-column-end: 4;
+    text-align: center;   
+}
+
+#home-top img {
+    text-align: center;
+    width: 40%;
+    height: auto;
 }
 
 #horiz{
@@ -31,32 +38,44 @@ body {
 #img-area{
     grid-area: image-content;
     justify-self: center;
+   
 }
 
 #tagline {
     grid-area: tagline;
 }
 
+#tagline h2 {
+    font-family: "Open Sans Condensed";
+    color: #4B3021;
+    font-size: 150%;
+    text-transform: uppercase;
+}
+
 .img-top {
     display: grid;
     grid-template-areas: "left center right";
     grid-gap: 1rem;
+    
 }
 
-#home-top{
+#home-top {
     grid-area: header
 }
 
 #img-lft{
     grid-area: left;
+    padding-bottom: 1rem;
 }
 
 #img-ctr{
     grid-area: center;
+    padding-bottom: 1rem;
 }
 
 #img-rgt{
     grid-area: right;
+    padding-bottom: 1rem;
 }
 
 #subtitle {
@@ -91,13 +110,15 @@ h2 {
 }
 
 h3{
-    font-family: 'Nanum Gothic', sans-serif;
-    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Open Sans Condensed';
+    color: #4B3021;
+    text-transform: uppercase;
 }
 
 /* midsection & sidebar CSS -----------------------------*/
 
-.main-contents{
+.main-contents {
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: 8% 28% 28% 28% 8%;
@@ -120,7 +141,41 @@ h3{
 #footer{
     grid-area: footer
 }
- 
+
+.second-title h1 {
+    font-family: "Open Sans Condensed";
+    color: #4B3021;
+    font-size: 200%;
+    text-transform: uppercase;
+}
+
+.item-content-1 p {
+    font-family: 'Raleway', light;
+    font-weight: 150;
+    font-size: 100%;
+    text-align: justify;
+    color: #86220A;
+    margin-bottom: 10px;
+}
+
+.item-content-2 p {
+    font-family: 'Raleway', light;
+    font-weight: 150;
+    font-size: 100%;
+    text-align: justify;
+    color: #86220A;
+    margin-bottom: 10px;
+}
+
+#sidebar-top p {
+    font-family: 'Raleway', light;
+    color: #4B3021;
+}
+
+#sidebar-bottom p {
+    font-family: 'Raleway', light;
+    color: #4B3021;
+}
 /* button CSS below---------------------- */
 
 .learnmore-button {
@@ -152,16 +207,18 @@ h3{
     background-color: rgb(161, 83, 30)
 }
 .date-label {
-    background-color: rgb(136, 121, 111);
+    background-color: #764248;
     border-radius: 6px;
-    color: white;
+    color: #FDE6BE;
     padding: .25rem;
     width: 25%;
     height: auto;
     box-shadow: darkgrey;
+    font-family: "Raleway", light;
 }
+
 .date-label:hover {
-    background-color: rgb(186, 190, 184);
+    background-color: #61373B;
 }
 
 /* quote area CSS -------------------------------------*/
