@@ -7,8 +7,7 @@ body {
     display: grid;
     width: 100%;
     height: 100%;
-    /* grid-template-columns: 1fr 3fr 3fr 3fr 1fr; */
-    grid-template-columns: 10% 80% 10%;
+    grid-template-columns: 20% 60% 20%;
     grid-template-rows: 15% 25% 45% 15%;
     grid-template-areas: " . header . "
                         " . blog-head . "
@@ -20,8 +19,20 @@ body {
                     
 }
 
+hr {
+    color: #9A8779;
+}
+
 #header {
     grid-area: header;
+    align-items: center;
+    text-align: center;
+}
+
+#home-top img {
+    text-align: center;
+    width: 40%;
+    height: auto;
 }
 
 #blog-head {
@@ -37,76 +48,32 @@ body {
     grid-area: footer;
 }
 
-header>h1 {
-    font-family: 'Montserrat', light;
-    text-align: center;
-    font-weight: 600;
-    font-size: 2.5em;
-    color: brown;
-    text-shadow: grey;
-}
-
-#subtitle {
-    font-family: 'Lora', ;
-    font-weight: 350;
+#blog-head h1 {
+    font-family: "Open Sans Condensed";
+    color: #4B3021;
     font-size: 200%;
+    text-transform: uppercase;
     text-align: center;
-    color: #4B3021;
-}
-
-#home-top a {
-    font-family: 'Montserrat', light;
-    text-align: center;
-    font-weight: 600;
-    font-size: 2.5em;
-    color: brown;
-    text-shadow: grey;
-}
-
-#blog-head h2 {
-    font-family: 'Lora', ;
-    font-weight: 300;
-    font-size: 175%;
-    text-align: center;
-    color: #4B3021;
 }
 
 #blog-head img {
     width: 100%;
     height: auto;
-}
-
-.nav > ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #63854D;
-    overflow: hidden;
-}
-
-.nav li {
-    display: inline;
     
 }
 
-.nav a {
-    display: block;
-    padding: 5px;
-    
-
-}
-
-.blog-words {
+.blog-words h2 {
     font-weight: 600;
-    font-family: 'Arimo', bold;
+    font-family: 'Open Sans Condensed';
     color: #4B3021;
+    text-transform: uppercase;
 }
 
 .blog-words p {
-    text-align: justify;
-    font-family: 'Source Sans Pro', light;
+    font-family: 'Raleway', light;
     font-weight: 150;
     font-size: 100%;
+    
     text-align: justify;
     color: #86220A;
     margin-bottom: 10px;

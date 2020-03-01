@@ -6,7 +6,7 @@ body {
     display: grid;
     width: 100%;
     height: 100%;
-    grid-template-columns: 10% 25% 55% 10%;
+    grid-template-columns: 20% 20% 40% 20%;
     grid-template-rows: 10% 45% 30% 15%;
     grid-template-areas: " . header header . " " . sidebar-top main . " " . sidebar-bot main . " " footer footer footer footer ";
     row-gap: .5rem;
@@ -17,37 +17,9 @@ hr {
     color: #9A8779;
 }
 
-/* header>h1 {
-    font-family: 'Montserrat', ;
-    text-align: center;
-    font-weight: 500;
-    font-size: 3em;
-    color: brown;
-    text-shadow: grey;
-} */
-
-/* #subtitle { */
-    /* font-family: 'Lora', ; */
-    /* font-weight: 300; */
-    /* font-size: 200%; */
-    /* text-align: center; */
-    /* color: #4B3021; */
-    /* margin-bottom: 20px; */
-/* } */
-
 #header {
     grid-area: header;
     align-items: center;
-    display: grid;
-    grid-template-areas: "img";
-}
-
-/* #home-top {
-    grid-area: img;
-} */
-
-#home-top header {
-    display: grid;
     text-align: center;
 }
 
@@ -56,26 +28,6 @@ hr {
     width: 40%;
     height: auto;
 }
-
-/* #header a {
-    align-self: center;
-    display: block;
-} */
-
-/* #header img {
-    display: block;
-    
-    
-} */
-
-/* #header a { */
-    /* font-family: 'Open Sans Condensed'; */
-    /* text-align: center; */
-    /* font-weight: 600; */
-    /* font-size: 2em; */
-    /* color: brown; */
-    /* text-shadow: grey; */
-/* } */
 
 #main {
     grid-area: main;
@@ -170,9 +122,11 @@ hr {
     justify-content: space-around;
 }
 
-.notables h4 {
+.notables h3 {
     color: #4B3021;
     font-family: "Open Sans Condensed";
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .notables p {
