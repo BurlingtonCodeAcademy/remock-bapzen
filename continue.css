@@ -28,10 +28,11 @@ p {
     font-size: 13px;
 }
 
-div .secondtitle> img{
-    max-width:100%;
-    object-fit: fill;
-}
+/* .secondtitle img{
+    width: 75%;
+    height: auto;
+    
+} */
 /* header CSS Below --------------------------------------------*/
 #header {
     text-align:center;
@@ -55,7 +56,7 @@ div .secondtitle> img{
 .main-contents{
     display: grid;
     grid-gap: 2rem;
-    grid-template-columns: autofill( 10% 55% 25% 10%);
+    grid-template-columns:  10% 55% 25% 10%;
     grid-template-rows: 10% 45% 30% 15%;
     grid-template-areas: 
     " . header header ."
