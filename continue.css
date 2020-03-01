@@ -133,12 +133,16 @@ h2#footer-title {
     margin: 5vh auto 3vh auto;
     font-size: 1em;
     letter-spacing: 5px;
+    color: black;
+    font-weight: lighter;
     }
-div#form-wrapper {
+div#form-space {
         display: flex;
         justify-content: space-evenly;
       }
-
+#footer p{
+    color: black;
+}
 div#form {
         display: grid;
         grid-template-columns: 1fr 1fr;

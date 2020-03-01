@@ -4,7 +4,6 @@ body {
     background-color: #FFFAF7;
 }
 
-
 .contain-blog {
     display: grid;
     width: 100%;
@@ -46,6 +45,7 @@ hr {
     grid-area: footer;
 }
 
+/* main content CSS below------------------------------------ */
 #blog-head h1 {
     font-family: "Open Sans Condensed";
     color: #4B3021;
@@ -87,13 +87,14 @@ hr {
 h2#footer-title {
     text-align: center;
     margin: 5vh auto 3vh auto;
+    font-weight: lighter;
     font-size: 1em;
     letter-spacing: 5px;
-    }
-div#form-wrapper {
+}
+div#form-space {
         display: flex;
         justify-content: space-evenly;
-      }
+}
 
 div#form {
         display: grid;
