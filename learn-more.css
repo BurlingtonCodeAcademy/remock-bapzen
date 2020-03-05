@@ -1,4 +1,5 @@
 /* general body CSS below----------------------- */
+
 body {
     background-color: #FFFAF7;
 }
@@ -33,12 +34,10 @@ hr {
 #main {
     grid-area: main;
     text-align: justify;
-    
 }
 
 #footer {
     grid-area: footer;
-   
 }
 
 #main h2 {
@@ -53,7 +52,6 @@ hr {
     color: #4B3021;
     font-size: 200%;
     text-transform: uppercase;
-    
 }
 
 #main-page p {
@@ -82,18 +80,15 @@ hr {
 #sidebar-bot {
     grid-area: sidebar-bot;
     padding-top: 1rem;
-    
 }
 
 .side-post {
     display: flex;
     flex-direction: column;
     justify-items: center;
-
 }
 
 .side-post>h4 {
-    
     font-family: 'Open Sans Condensed';
     color: #4B3021;
     text-transform: uppercase;
@@ -105,13 +100,10 @@ hr {
 }
 
 #sidebar-overlay {
-    background-image:
-        linear-gradient(rgba(255, 250, 247, 0.9), rgba(255, 250, 247, 0.9)),
-        url(side-overlay.png);
+    background-image: linear-gradient(rgba(255, 250, 247, 0.9), rgba(255, 250, 247, 0.9)), url(side-overlay.png);
     background-repeat: no-repeat;
-        
-
 }
+
 /* button CSS below------------------------ */
 
 .date-label {
@@ -170,11 +162,12 @@ hr {
     height: 7rem;
     width: 7rem;
     padding-right: 15px;
-   padding-top: 15px;
-   padding-top: 10px;
+    padding-top: 15px;
+    padding-top: 10px;
 }
 
 /* footer CSS Below ---------------------------------*/
+
 #footer {
     margin: 1em 0 0 0;
     padding: 1em;
@@ -182,117 +175,123 @@ hr {
     border-top: 1px solid rgb(122, 117, 117);
     box-shadow: 0 50vh 0 50vh rgb(145, 162, 168);
 }
+
 h2#footer-title {
     text-align: center;
     margin: 5vh auto 3vh auto;
     font-size: 1em;
     font-weight: lighter;
     letter-spacing: 5px;
-    }
+}
+
 div#form-space {
-        display: flex;
-        justify-content: space-evenly;
-      }
+    display: flex;
+    justify-content: space-evenly;
+}
 
 div#form {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 3fr 1fr;
-        grid-gap: 0.5em;
-        grid-template-areas:
-          "  customer-name      customer-email"
-          "  customer-message   customer-message"
-          "  send-button        . ";
-        margin: 1em;
-        width: 42.5vw;
-      }
-      
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-gap: 0.5em;
+    grid-template-areas: "  customer-name      customer-email" "  customer-message   customer-message" "  send-button        . ";
+    margin: 1em;
+    width: 42.5vw;
+}
+
 #customer-name {
-        grid-area: customer-name;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 10px;
-        padding-left: 10px;
-      }
+    grid-area: customer-name;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    padding-left: 10px;
+}
 
 #customer-name:focus {
-        background-color: grey;
-    }
+    background-color: grey;
+}
+
 #customer-email {
-        grid-area: customer-email;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 10px;
-        padding-left: 10px;
-      }
+    grid-area: customer-email;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    padding-left: 10px;
+}
 
 #customer-email:focus {
-        background-color: grey;
-    } 
+    background-color: grey;
+}
+
 #customer-message {
     grid-area: customer-message;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 10px;
     padding-left: 10px;
     padding-top: 10px;
-  }
-#customer-message:focus{
+}
+
+#customer-message:focus {
     background-color: grey;
 }
-#contact-info{
-    display:grid;   
+
+#contact-info {
+    display: grid;
     grid-template-rows: repeat(7, 1fr);
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "contact-text   contact-text"
-    "contact-text   contact-text"
-    "   address     twitter"
-    "   address     instagram"
-    "phonenumber   dribbble"
-    " email         facebook";
-  width: 41vw;
+    grid-template-areas: "contact-text   contact-text" "contact-text   contact-text" "   address     twitter" "   address     instagram" "phonenumber   dribbble" " email         facebook";
+    width: 41vw;
 }
 
-div#contact-info > li{
-    font-size: 12px;
-}
-div#contact-info > p{
+div#contact-info>li {
     font-size: 12px;
 }
 
-#contact-text{
+div#contact-info>p {
+    font-size: 12px;
+}
+
+#contact-text {
     grid-area: contact-text;
- }
+}
 
-#message-button{
+#message-button {
     grid-area: send-button;
     border-radius: 6px;
     margin: 0;
     background-color: rgb(218, 103, 37);
     color: white;
 }
-#address{
+
+#address {
     grid-area: address
 }
-#phonenumber{
+
+#phonenumber {
     grid-area: phonenumber
 }
-#email{
-    grid-area:email
+
+#email {
+    grid-area: email
 }
-#twitter{
+
+#twitter {
     grid-area: twitter
 }
-#instagram{
-    grid-area:instagram
+
+#instagram {
+    grid-area: instagram
 }
-#dribbble{
+
+#dribbble {
     grid-area: dribbble
 }
-#facebook{
+
+#facebook {
     grid-area: facebook
 }
-#contact-info li{
+
+#contact-info li {
     list-style-type: none;
-} 
+}
 
 .fa {
     padding: 5px;
@@ -301,50 +300,61 @@ div#contact-info > p{
     text-align: center;
     text-decoration: none;
     border-radius: 85%;
-  }
-  
-  /*Hover effect on social media icons*/
-  .fa:hover {
+}
+
+/*Hover effect on social media icons*/
+
+.fa:hover {
     opacity: 0.7;
-  }
+}
 
 /*   social media and contact icon CSS below ----------------------------*/
-  
+
 /* Facebook */
-  .fa-facebook {
-    background:grey;
+
+.fa-facebook {
+    background: grey;
     color: white;
-  }
-  
-  /* Twitter */
-  .fa-twitter {
-    background:grey;
+}
+
+/* Twitter */
+
+.fa-twitter {
+    background: grey;
     color: white;
-  }
+}
 
 /* Dribbble*/
-  .fa-dribbble{
-      background: grey;
-      color: white;
-  }
+
+.fa-dribbble {
+    background: grey;
+    color: white;
+}
 
 /* Instagram */
-  .fa-instagram{
-      background: gray;
-      color: white;
-  }
-  /* Email */
-  .fa-envelope-square{
-      background: grey;
-      color: white;
-  }
+
+.fa-instagram {
+    background: gray;
+    color: white;
+}
+
+/* Email */
+
+.fa-envelope-square {
+    background: grey;
+    color: white;
+}
+
 /* Phone */
-  .fa-phone{
-      background: grey;
-      color: white;
-  }
+
+.fa-phone {
+    background: grey;
+    color: white;
+}
+
 /* Address */
-  .fa-home{
-      background: grey;
-      color: white;
-  }
+
+.fa-home {
+    background: grey;
+    color: white;
+}
